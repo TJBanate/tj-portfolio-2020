@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&family=Open+Sans&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        var windw = this;
+
+$.fn.followTo = function ( pos ) {
+    var $this = this,
+        $window = $(windw);
+
+    $window.scroll(function(e){
+        if ($window.scrollTop() > pos) {
+            $this.css({
+                position: 'absolute',
+                top: pos
+            });
+        } else {
+            $this.css({
+                position: 'fixed',
+                top: 0
+            });
+        }
+    });
+};
+
+$('#pokePicDiv').followTo('#contactDivSection');
+
+        </script>
+
+  </head>
+  <body>
+    <div class="page-wrap">
+      <!-- closing div tag under cloding body tag -->
+    <header>
+      <img class="logo" src="pictures/tj-logo.png" alt="monogram style logo with cursive initials TJ colours pink white and black">
+    </header>
+
+  <nav>
+    <a href="#aboutAnchor">About</a>
+    <!-- <a href="projects.html">Projects</a> -->
+    <a href="#contactAnchor">Contact</a>
+  </nav>
+
+  <main>
+
+    <img class="spinningLogo" src="pictures/vinyl-record-logo.gif">
+  <div class="homepageText">
+    <h1>Hello, my name is Tasha Jade</h1>
+    <h2>I'm a multi-passionate creative being with a love for making things.</h2>
+  </div>
+
+  <a name="aboutAnchor"></a>
+
+  <div class="aboutMeSection">
+
+    <div class="pokePicDiv">
+      <img class="pokePic" src="pictures/pokeProfilePic-tj.png" alt="this is a pokemon card inspired profile and stat pic of Tasha Jade Banate">
+    </div>
+
+   <div class="introBio"> <!--closing tag after text-->
+    <h1>Tasha Jade Banate</h1>
+     <h2>is a multi-passionate creative based in Toronto/ Tkaronto, Canada.</h2>
+        <p>She considers herself a modern day <a href="#" title="Someone who is well versed and skilled in many things. Like being someone who can eat a large pizza by yourself AND write a 4-part choral piece by midnight.">"Renaissance person"</a> with a thirst for knowledge and a love for making things. She graduated from Humber College's <a href="#" title="Yes, I sing and play piano! Any requests? Just no country please.">Bachelor of Music</a> program in 2016, and soon after, graduated with a diploma in <a href="#" title="Dismissing that large pizza I mentioned earlier, I like to think that I'm a pretty healthy person.">Integrative Nutrition</a>, from the Institute of Integrative Nutrition. She is a recent graduate of U for Change’s Graphic Design and Web Development course, and continues to develop her skills through online self-study.</p>
+
+        <p>Tasha Jade is a natural problem-solver with a fire for making things happen! She believes that a person can do anything as long as they’re willing to put the energy into crafting their skills.</p>
+    </div> <!--end of introBio div tag-->
+
+    <div class: "quotesInBio">
+      <blockquote>
+        <p>“Creativity is my natural talent, but you can’t make anything from creativity alone. You have to build skills first - so I learned how to draw, make songs, write stories - and that’s how my love for learning started. I believe a person can do anything as long as they put their time and heart into it.”</p>
+        <cite>- Tasha Jade Banate</cite>
+      </blockquote>
+
+      <p>(Or simply put by the great Bob Ross)</p>
+
+      <blockquote>
+        <p>“Talent is a pursued interest. Anything that you're willing to practice, you can do.”</p>
+        <cite>- Bob Ross</cite>
+      </blockquote>
+    </div> <!--end of quotesInBio-->
+
+  <div class="educationBio">
+    <h2>Education</h2>
+      <p><a href="#" title="Recently graduated!">Graphic Design and Web Development | U for Change (2020)</a></p>
+      <p><a href="#" title="Studying nutrition changed my life! You can ask me about it :)">Diploma in Integrative Nutrition, Health Coaching | Institute of Integrative Nutrition (2017)</a></p>
+      <p><a href="#" title="This was a challenging 4 years but we prevailed!">Bachelor of Music, Vocal Major | Humber College (2016)</a></p>
+  </div>
+
+  <div class="techBio">
+    <!-- <script>
+    $(".img").each(function() {
+      $(this).after('<p class="alt">' + $(this).attr('alt') + '</p>');
+    }) </script> js for fading in and out the alt text, might delete-->
+    <h2>Tech Skills</h2>
+     <!--javascript, jquery, css, wix, shopify, adobe illustrator, photoshop, premiere elements, logicx, protools, copywriting-->
+        <div class="iconSection">
+          <img class="iconImg" src="icons/htmlIcon.png" alt="black and white icon symbol for HTML5" title="HTML5">
+           <img class="iconImg" src="icons/cssIcon.png" alt="black and white icon symbol for CSS3" title="CSS3">
+            <img class="iconImg" src="icons/javascriptIcon.png" alt="black and white icon symbol for Javascript" title="Javascript">
+             <img class="iconImg" src="icons/jqueryIcon.png" alt="black and white icon symbol for jQuery" title="jQuery">
+              <img class="iconImg" src="icons/illustratorIcon.png" alt="black and white icon symbol for Adobe Illustrator" title="Adobe Illustrator">
+               <img class="iconImg" src="icons/photoshopIcon.png" alt="black and white icon symbol for Photoshop" title="Photoshop">
+             <img class="iconImg" src="icons/premiereproIcon.png" alt="black and white icon symbol for Premiere Pro" title="PremierePro">
+            <img class="iconImg" src="icons/logicproIcon.png" alt="black and white icon symbol for Logic X" title="LogicX">
+           <img class="iconImg" src="icons/copywritingIcon.png" alt="black and white icon symbol for Copywriting" title="Copywriting">
+         <p>I can do anything from designing your next logo to editing audio for your podcast.</p>
+         <p>I love projects with vision and good a story to tell - <a href="contact.html">Send me a message</a> and let's make magic happen!</p>
+        </div> <!--end of iconSection div tag-->
+    </div> <!--end of techBio section div tag -->
+  </div> <!--end of aboutMeSection div-->
+
+  <div class="contactDivSection">
+   <a name="contactAnchor"></a>
+      <img class="chatPng" src="pictures/chatVector.png" alt="an icon of a black and white png chat bubble with three dots">
+
+        <div class="contactTitle">
+          <h1>Want to work together?</h1>
+          <h2>I'll be in touch with you soon!</h2>
+        </div>
+
+          <form method="POST" action="path/to/form/script/processing">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email">
+
+            <label for="message">Drop me a message!</label>
+            <textarea id="message" name="name"></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+    </div> <!--end of div tag contactDiv-->
+
+  </main>
+</div>
+  </body>
+
+</div> <!--close page wrap-->
+
+<footer>
+  <p> Copyright &copy;Tasha Jade Banate. All rights reserved. </p>
+</footer>

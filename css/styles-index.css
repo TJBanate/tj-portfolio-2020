@@ -1,0 +1,171 @@
+header,
+nav,
+main {
+  padding: 0%;
+  margin: 0%;
+}
+
+/* nav{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding-left: 70%;
+  position: sticky;
+  font-size: 33px;
+  padding-top: 40px;
+  padding-bottom: -100px;
+} */
+/* header {
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+} */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 0%;
+  padding-left: 0%;
+  margin:0px;
+
+  /*border: 3px dashed white  ---indicates width of border;*/
+  width:1000px;
+  height: 200px;
+  color:#2e2930;
+  background: #f8ead0; /*this is like a slightly darker papayawhip/ beige */
+  background-image: url('../pictures/leaves-background.gif');
+    /* background-image: linear-gradient(to right, rgba(500,700,0,0.5), rgba(0,0,255,0.5)), --this code is to make the gradient rainbow effect*/
+  min-height: 1080px;
+  background-attachment: fixed;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .logo {
+  height: 20%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+} */
+/* need to find out how to center header  */
+
+h1, h2 {
+  margin: 0%;
+  color:#2e2930; /*a black-like shade */; font-size:44px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+h2 {
+  font-size:25px;
+}
+
+a {
+  color: #2e2930;
+  text-decoration: none;
+}
+/* :root {
+  --mainColor: #f8897e;
+}
+a {
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .2s;
+}
+a:hover {
+  background-size: 4px 50px;
+  /* text-decoration: underline; */
+} */
+
+/* FOOTER STYLES
+-----------------------------------------*/
+/* Sticky Footer - http://css-tricks.com/snippets/css/sticky-footer */
+  .page-wrap {
+  min-height: 100%;
+  margin-bottom: -60%; /* must be the same height as footer */
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+footer, .page-wrap:after {
+  height: 60px; /* however tall you want the footer to be */
+}
+
+/*footer fade in effect when hovered over */
+footer {
+  width: 100%
+  height: 60px;
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  text-align: right;
+  padding-left: 38%;
+  opacity: 0;
+   transition: opacity 1s ease-in-out;
+   -moz-transition: opacity 0.25s ease-in-out;
+   -webkit-transition: opacity 0.25s ease-in-out;
+}
+
+footer:hover{
+  opacity: 1;
+}
+
+
+/*spinning icon*/
+.spinningLogo {
+  height: 120%;
+  width: 120%;
+  padding-left: 23%;
+  padding-top:0px;
+  align-content: flex-start;
+  margin: 0%;
+}
+/* hover effect */
+.spinningLogo:hover {
+  display: inline-block;
+   vertical-align: middle;
+   transform: translateZ(0);
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+   backface-visibility: hidden;
+   -moz-osx-font-smoothing: grayscale;
+   transition-duration: 0.3s;
+   transition-property: transform;
+}
+
+.spinningLogo:hover,
+.SpinningLogo:focus,
+.SpinningLogo:active {
+   transform: scale(1.1);
+}
+}
+.enterLink {
+text-align: center;
+float:right;
+font-size: 40px;
+}
+
+/* masonry code for projects page */
