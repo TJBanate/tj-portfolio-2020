@@ -104,26 +104,30 @@ main {
   /* position: sticky;
   position: -webkit-sticky;
   top: 0; */
-  z-index:-1;
+  /* z-index:-1; */
   overflow:hidden;
 }
 
 .pokePicDiv {
  padding:0px;
  width:40%;
+ height:40%;
+ inline-size:560px;
  position:sticky; top:0; left:0;
+ position: -webkit-sticky;
  float:left; /*tryng this out*/
  /* z-index: 1; */
- overflow: hidden;
- /* padding-bottom: 30px; */
+ /* overflow: hidden; */
+ padding-bottom: 30px;
 }
 
 .chatPng {
-  height: 30%;
-  Width: 30%;
-  float: left;
+  height: 10%;
+  Width: 10%;
+  float: right;
   padding-top: 0px;
   padding-left: 15%;
+  padding-right: 23%;
 }
 
 /* .flexslider {
@@ -299,9 +303,13 @@ z-index:1;
   /* padding-left: 46.5%;
   overflow:hidden; */
 }
-
 .contactTitle {
   padding-left: 57%
+}
+
+.contactDivSection {
+  overflow: scroll;
+  z-index: 1
 }
 
 /*hover over icons*/
