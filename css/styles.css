@@ -97,22 +97,25 @@ main {
 .pokePic {
   float:left;
   /* resize: block; */
-  max-height: 30%;
-  width: 30%;
+  /* max-height: 30%;
+  width: 30%; */
   padding-left: 10%;
   padding-right: 5%;
-  padding-bottom: 5%;
   /* position: sticky;
   position: -webkit-sticky;
   top: 0; */
+  z-index:-1;
+  overflow:hidden;
 }
 
 .pokePicDiv {
  padding:0px;
- width:100%;
+ width:40%;
  position:sticky; top:0; left:0;
  float:left; /*tryng this out*/
- z-index: 7;
+ /* z-index: 1; */
+ overflow: hidden;
+ /* padding-bottom: 30px; */
 }
 
 .chatPng {
@@ -240,34 +243,65 @@ footer:hover{
 }
 
 /*css for specific bodies of text*/
-.introBio {
-  padding-left: 46.5%;
-}
-.quotesInBio {
-  padding-left: 46.7%;
-}
-.educationBio {
-  padding-top: 30px;
-  padding-left:46.5%;
-}
-.techBio {
-  padding-top: 30px;
-  padding-left: 46.5%
-}
-.personalBio {
-  padding-top:30px;
-  padding-left: 46.5%;
-}
+
 .homepageText {
   padding-top: 10%;
   padding-bottom: 20%;
 }
-.contactTitle {
-  padding-left: 57%
-}
+
+/* about section css */
 
 .aboutMeSection {
-  padding-bottom: 20%;
+padding-bottom: 20%;
+z-index:1;
+}
+
+.introBio {
+  padding-top: 30px;
+  display:flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 80px;
+  /* overflow:hidden; */
+}
+
+.educationBio {
+  padding-top: 30px;
+  display:flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:46.5%;
+  /* overflow:hidden; */
+}
+.techBio {
+  padding-top: 30px;
+  display:flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 46.5%;
+  /* overflow:hidden; */
+}
+.personalBio {
+  padding-top:30px;
+  display:flex;
+  align-items: flex-start;
+  flex-direction: column;
+  /* padding-left: 46.5%;
+  overflow:hidden; */
+}
+
+.quotesInBio {
+  display:flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 80px;
+
+  /* padding-left: 46.5%;
+  overflow:hidden; */
+}
+
+.contactTitle {
+  padding-left: 57%
 }
 
 /*hover over icons*/
